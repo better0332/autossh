@@ -200,10 +200,10 @@ func (app *App) saveConfig() error {
 		return err
 	}
 
-	err = app.backConfig()
-	if err != nil {
-		return err
-	}
+	// err = app.backConfig()
+	// if err != nil {
+	// 	return err
+	// }
 
 	return ioutil.WriteFile(app.ConfigPath, out.Bytes(), os.ModePerm)
 }

@@ -56,10 +56,10 @@ func (logger *logger) Category(category string) *logger {
 
 func (logger *logger) Info(msg ...interface{}) {
 	logger.level = "[Info]"
-	logger.write(msg...)
+	// logger.write(msg...)
 }
 
 func (logger *logger) Error(msg ...interface{}) {
 	logger.level = "[Error]"
-	logger.write(msg...)
+	// logger.write(msg...)
 }
